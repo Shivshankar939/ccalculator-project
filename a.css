@@ -1,0 +1,127 @@
+/* styles.css */
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 360px;
+    width: 100%;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.display {
+    background-color: #456c94;
+    color: white; /* Uncommented for visibility */
+    padding: 15px;
+    text-align: right;
+    font-size: 2em;
+    border-bottom: 1px solid #ccc;
+}
+
+.dis {
+    background-color: #72c4c1;
+    /* border-radius: 6px; Uncomment if needed */
+}
+
+button {
+    border: solid;
+    padding: 25px;
+    font-size: 1.2em;
+    background-color: #e0e0e0; /* Light background for buttons */
+    color: #c44c4c; /* Text color for buttons */
+    }
+
+button:hover {
+    background-color: #393535;
+}
+
+button:active {
+    background-color: #b4b4b4;
+}
+
+/* Unique IDs removed for buttons; using data-value for styling */
+button[data-value="C"] {
+    background-color: #ff6f6f;
+    color: white;
+}
+
+button[data-value="C"]:hover {
+    background-color: #e55b5b;
+}
+
+button[data-value="="] {
+    background-color: #4caf50;
+    color: white;
+}
+
+button[data-value="="]:hover {
+    background-color: #45a049;
+}
+
+button[data-value="%"] {
+    background-color: #6749ed;
+    color: white;
+}
+
+button[data-value="%"]:hover {
+    background-color: #e89c34;
+}
+
+button[data-value="+"] {
+    background-color: #f9a825;
+    color: white;
+}
+
+button[data-value="+"]:hover {
+    background-color: #f57f17;
+}
+
+button[data-value="-"] {
+    background-color: #a33fd1;
+    color: white;
+}
+
+button[data-value="-"]:hover {
+    background-color: #e65100;
+}
+
+button[data-value="*"] {
+    background-color: #ae7564;
+    color: white;
+}
+
+button[data-value="*"]:hover {
+    background-color: #f57c00;
+}
+
+button[data-value="/"] {
+    background-color: #d32f2f;
+    color: white;
+}
+
+button[data-value="/"]:hover {
+    background-color: #c62828;
+}
+
+/* Adjusting buttons container background color */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Adjust gap as necessary */
+    padding: 10px;
+    background-color: #436d9b;
+    border: 3px solid black;
+    
+}
+
